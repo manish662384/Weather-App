@@ -1,0 +1,137 @@
+
+@keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 30%; }
+}
+
+body{
+    color:#fff;
+    text-align:center;
+    background-image: url('http://localhost:3000/earth-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 12px;
+    font-family: 'Dancing Script', cursive;
+    -webkit-animation: animatedBackground 12s linear alternate infinite;
+    animation: animatedBackground 12s linear alternate infinite;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+}
+#headerImg{
+    width: 80px;
+    height: 80px;
+}
+
+#errorMsg{
+    color: red;
+}
+
+section{
+    width: 310px;
+    height: 560px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid 3px white;
+    border-radius: 15px;
+    margin-top: 30px;
+    /*-- background color with ui gradients and having some opacity through rgba so that the toggle switch as child does not have opacity --*/
+    background: linear-gradient(to top left, rgba(72, 0, 72, 0.9) 40%, rgba(255, 148, 114, 0.9) 119%);
+
+    /*--------- Different color combinations of ui gradients --------------*/
+   /* background: linear-gradient(to top left, #B24592 29%, #F15F79 108%);*/
+   /* background: linear-gradient(to top left, #B24592 29%, #ff9472 108%); */ 
+    /*background: linear-gradient(to top left, #833ab4 29%, #fcb045 108%);*/
+    /*background: linear-gradient(to top left, #185a9d 29%, #43cea2 108%);*/
+    /*background: linear-gradient(to top left, #360033 29%, #0b8793 108%);*/
+  /*  background: linear-gradient(to top left, #373b44 29%, #73c8a9 108%);*/  
+    /*background: linear-gradient(to top left, #480048 40%, #ff9472 119%);*/
+}
+
+#temp{
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+img#weather-icon{
+    width: 100px;
+    height: 100px;
+}
+
+#cityCountry{
+    padding-top: 20px;
+}
+.spacing{
+    margin-top: 20px;
+}
+#weatherDiv{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+h3{
+    margin-bottom: 0px;
+}
+#switchParent{
+    height: 170px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Toggle Switch */
+.onoffswitch {
+    position: relative; width: 170px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    margin-left: auto;
+    margin-right: auto;
+    top: 90px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 35px; padding: 0; line-height: 35px;
+    font-size: 17px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Celsius";
+    padding-left: 6px;
+    background-color: #004F05; color: #fff;
+}
+.onoffswitch-inner:after {
+    content: "Fahrenheit";
+    padding-left: 9px;
+    background-color: #000; color: #fff;
+}
+.onoffswitch-switch {
+    display: block; width: 33px; margin: 3px;
+    background: #fff;
+    position: absolute; top: 0; bottom: 0;
+    right: 130px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+footer{
+    margin-top: 40px;
+}
+
