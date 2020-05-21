@@ -78,7 +78,7 @@ function temperatureToggle(tempCelsius){
 			document.getElementById("temp").innerHTML = tempFahrenheit + String.fromCharCode(176) + " F";			
 		else
 			document.getElementById("temp").innerHTML = tempCelsius + String.fromCharCode(176) + " C";			
-	});	
+	});
 }
 /*-- Displaying the time where seconds is running by calling the function after every interval of 1000ms/1sec --*/
 function dateTime(){

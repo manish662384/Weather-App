@@ -7,7 +7,7 @@
 body{
     color:#fff;
     text-align:center;
-    background-image: url('http://localhost:3000/earth-img.jpg');
+    background-image: url('earth-img.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

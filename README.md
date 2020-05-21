@@ -14,5 +14,6 @@ Data is displayed after making AJAX calls to the fcc API: https://fcc-weather-ap
 in the app in a basic looking UI.
 fcc internally uses https://openweathermap.org/weather-conditions weather API. So I referred the same for some weather ids useful 
 for displaying different animated weather icons.
+It also has a background image of Earth which is animated infinitely.
 
 The App contains basic data such as temperature, Date and dynamic changing time in seconds, city, country etc.
