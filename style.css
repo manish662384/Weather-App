@@ -1,7 +1,7 @@
 
 @keyframes animatedBackground {
-  0% { background-position: 0 0; }
-  100% { background-position: 0 30%; }
+  0% { background-position: 0 50%; }
+  100% { background-position: 0 100%; }
 }
 
 body{
@@ -13,8 +13,8 @@ body{
     background-size: cover;
     font-size: 12px;
     font-family: 'Dancing Script', cursive;
-    -webkit-animation: animatedBackground 12s linear alternate infinite;
-    animation: animatedBackground 12s linear alternate infinite;
+    -webkit-animation: animatedBackground 7s linear alternate infinite;
+    animation: animatedBackground 7s linear alternate infinite;
     padding-top: 40px;
     padding-bottom: 40px;
 }
